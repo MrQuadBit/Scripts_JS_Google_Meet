@@ -1,6 +1,4 @@
 let participants_in_order = []
-//Test
-let original_size = 0 //Aux to know if the array changes
 //Class identifiers in google meet
 const CONTAINER_PARTICIPANTS = "zWGUib"
 const CONTAINER_NEW_BUTTON = "vqs9je"
@@ -13,22 +11,10 @@ function check_new_users(){
 	for(let name of participants){
 		if(! participants_in_order.includes(name.textContent)){
 			participants_in_order.push(name.textContent)
-			//Test
-			new_participants ++
 		}
 	}
-
-	//Test
-	//Print when the list changes
-	if(participants_in_order.length > original_size){
-		console.log(participants_in_order)
-		original_size += new_participants
-	}else{
-		console.log("No new users")
-	}
-	
 }
-let run_checking = window.setInterval(check_new_users, 1000)
+let run_checking = window.setInterval(check_new_users, 750)
 function stop_checking(){
 	clearInterval(run_checking)
 }
