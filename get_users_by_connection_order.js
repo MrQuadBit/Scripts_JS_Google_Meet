@@ -1,4 +1,5 @@
 let participants_in_order = []
+const REPLAY_TIME = 550
 //Class identifiers in google meet
 const CONTAINER_PARTICIPANTS = "zWGUib"
 const CONTAINER_NEW_BUTTON = "vqs9je"
@@ -14,7 +15,7 @@ function check_new_users(){
 		}
 	}
 }
-let run_checking = window.setInterval(check_new_users, 750)
+let run_checking = window.setInterval(check_new_users, REPLAY_TIME)
 function stop_checking(){
 	clearInterval(run_checking)
 }
