@@ -2,7 +2,7 @@ let team_members = []
 let aplc_members = []
 //Class identifiers in google meet
 const CONTAINER_PARTICIPANTS = "zWGUib"
-const CONTAINER_NEW_BUTTON = "R5ccN" // This change all the time, so review it if it give an error
+const CONTAINER_NEW_BUTTON = "R5ccN" // This change all the time, so review it if it gives an error
 const TIME_REPLAY = 550
 
 //ToDo: Add team leader to the end of the list
