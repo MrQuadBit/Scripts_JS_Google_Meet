@@ -2,7 +2,7 @@ let participants_in_order = []
 const REPLAY_TIME = 550
 //Class identifiers in google meet
 const CONTAINER_PARTICIPANTS = "zWGUib"
-const CONTAINER_NEW_BUTTON = "vqs9je"
+const CONTAINER_NEW_BUTTON = "R5ccN"
 //-------------------------------------------------------
 function check_new_users(){
 	let participants = document.getElementsByClassName(CONTAINER_PARTICIPANTS)
